@@ -8,7 +8,8 @@
 ## > cacheSolve(cm)
 
 
-## This function creates a matrix wrapper object that can hold its cached inverse.
+## This function creates a matrix wrapper object that can hold its
+## cached inverse.
 
 makeCacheMatrix <- function(matrx = matrix()) {
     inverse <- NULL
@@ -25,8 +26,8 @@ makeCacheMatrix <- function(matrx = matrix()) {
 }
 
 
-## This a version of the solve(x, ...) function that calculates the inverse of
-## the given matrix or returns the cached inverse if it has already been 
+## This is a version of the solve(x, ...) function that calculates the inverse
+## of the given matrix or returns the cached inverse if it has already been 
 ## calculated (and the matrix has not changed).
 
 ## x must be a makeCacheMatrix object.
